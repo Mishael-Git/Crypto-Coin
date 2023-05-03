@@ -5,7 +5,7 @@ import {Container,Navbar,Nav} from 'react-bootstrap';
 import { BiBitcoin } from "react-icons/bi";
 function Top() {
   return (
-    <Navbar c expand="lg">
+    <Navbar expand="lg">
       <Container>
       <Navbar.Brand href="#home" className="rounded-full bg-[#ffd700] w-8">
         <BiBitcoin
@@ -13,7 +13,7 @@ function Top() {
           className="text-white font-extrabold cursor-pointer"
         />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle aria-controls="basic-navbar-nav"/>
       <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ms-auto">
        <Nav.Link href="#features" > <p class="text-white px-6 hover:text-slate-500">Features </p></Nav.Link>
