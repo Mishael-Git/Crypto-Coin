@@ -1,0 +1,1 @@
+md:flex-row md:items-center md:gap-[4vw]
