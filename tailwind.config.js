@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        Bit:"url('./public/Bitbackground4.jpg')",
+        Bit:"url('./public/Bitbackground1.jpg')",
       }
     },
   },
