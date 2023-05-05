@@ -23,7 +23,7 @@ function Top() {
         </Nav>
       <Nav className="ms-auto">
         <div className="border">
-        <button class="text-white">Get started</button>
+        <button class="text-white px-4 ">Get started</button>
         </div>
       </Nav>
         

@@ -3,7 +3,7 @@ import Body from "./components/Body";
 
 function App() {
   return (
-    <div className="bg-[url('./public/Bitbackground1.jpg')]   h-screen max-w-screen">
+    <div className="  bg-gradient-to-r from-purple-500 to-indigo-500  h-screen w-screen">
       <Body />
     </div>
   );

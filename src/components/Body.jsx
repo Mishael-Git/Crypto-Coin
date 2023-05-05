@@ -1,16 +1,16 @@
 import React from "react";
 import { Nav } from "./Info";
-import MainBody from "./MainBody";
+import Home from "./Home";
 
 function Body() {
   return (
-    <div className="bg-[url('./public/Bitbackground1.jpg')]">
+    <div className="">
       <div>
         <Nav />
       </div>
 
       <div>
-        <MainBody/>
+        <Home/>
       </div>
     </div>
   );
