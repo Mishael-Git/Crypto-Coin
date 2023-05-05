@@ -12,7 +12,7 @@ function Home() {
   }, []);
 
   return (
-    <div className=" md:px-36 sm:px-5  py-5 ">
+    <div className=" px-[10%]  py-[10%] ">
 <div className="space-y-5">
       <div>
       <h1 className="text-3xl font-bold text-white">Secure way to buy &</h1>
