@@ -12,8 +12,8 @@ function Home() {
   }, []);
 
   return (
-    <div className=" md:px-36 sm:px-5  py-5 space-y-5">
-<div>
+    <div className=" md:px-36 sm:px-5  py-5 ">
+<div className="space-y-5">
       <div>
       <h1 className="text-3xl font-bold text-white">Secure way to buy &</h1>
         <h1 className="text-3xl font-bold text-white">sell crypto</h1>
@@ -23,7 +23,7 @@ function Home() {
        <p class="text-white">from your phone</p>
       </div>
 
-      <div className="md:w-[10%] sm:w-[20%]  ">
+      <div className="md:w-[20%]   ">
         <button className="px-3 bg-orange-500 rounded-lg hover:text-white">Get started</button>
       </div>
      </div>
