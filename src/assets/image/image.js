@@ -1,2 +1,2 @@
-import pic1 from "./Bitbackground4.jpg";
+import pic1 from "./Bitbackground4.png";
 export { pic1 };

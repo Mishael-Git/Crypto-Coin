@@ -1,5 +1,6 @@
 import React from "react";
 import Body from "./components/Body";
+import BitcoinAnimation from "./components/Test";
 
 function App() {
   return (
