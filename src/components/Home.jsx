@@ -14,19 +14,19 @@ function Home() {
   }, []);
 
   return (
-    <div className="  md:flex md:flex-row sm:flex-col justify-between items-center px-[10%]  py-[10%] ">
+    <div className="  md:flex md:flex-row sm:flex-col justify-between items-center px-[10%]  py-[4%] ">
 <div className="space-y-5">
-      <div>
-      <h1 className="text-3xl font-bold text-white">Secure way to buy &</h1>
-        <h1 className="text-3xl font-bold text-white">sell crypto</h1>
+      <div className="">
+      <h1 className="text-6xl font-bold text-white">Secure way to Buy & </h1>
+        <h1 className="text-6xl font-bold text-white">Sell Crypto</h1>
       </div>
       <div>
-      <p class="text-white">secured crypto investing</p>
-       <p class="text-white">from your phone</p>
+      <p class="text-white text-3xl">secured crypto investing</p>
+       <p class="text-white text-3xl">from your phone</p>
       </div>
 
       <div className="md:w-[40%] sm:w-[40%]  ">
-        <button className="px-3 bg-orange-500 duration-300  ease-in rounded-lg hover:text-white">Get started</button>
+        <button className="px-3 py-2 bg-orange-500 duration-300  ease-in rounded-lg hover:text-white">Get started</button>
       </div>
      </div>
      <div>

@@ -22,7 +22,7 @@ function Top() {
        <Nav.Link href="#log in" > <p class="text-white px-4 hover:text-slate-500">Log In </p></Nav.Link>
         </Nav>
       <Nav className="ms-auto">
-        <div className="border">
+        <div className="border rounded-md">
         <button class="text-white px-4 ">Get started</button>
         </div>
       </Nav>
