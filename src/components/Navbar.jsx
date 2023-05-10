@@ -33,14 +33,14 @@ function Top() {
               {" "}
               <p class="text-white px-4 hover:text-slate-500">Blog </p>
             </Nav.Link>
-            <Nav.Link as={Link} to="/sign up">
+            <Nav.Link as={Link} to="/sign in">
               {" "}
               <p class="text-white px-4 hover:text-slate-500">Log In </p>
             </Nav.Link>
           </Nav>
           <Nav className="ms-auto">
             <div className="border rounded-md">
-              <button class="text-white px-4 ">Get started</button>
+            <Link to="sign up">  <button class="text-white px-4 ">Get started</button></Link>
             </div>
           </Nav>
         </Navbar.Collapse>

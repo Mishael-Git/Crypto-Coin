@@ -7,6 +7,7 @@ import Features from "./components/Features";
 import Sign_up from "./components/Sign_up";
 import Market from "./components/Market";
 import Blog from "./components/Blog";
+import Login from "./components/LogIn";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/features" element={<Features />} />
         <Route path="/market" element={<Market />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/sign in" element={<Login/>} />
         <Route path="/sign up" element={<Sign_up />} />
       </Routes>
     </div>
