@@ -1,16 +1,11 @@
 import React from "react";
-import { Nav } from "./Info";
-import Home from "./Home";
+import { Main } from "./Info";
 
 function Body() {
   return (
-    <div className="">
+    <div>
       <div>
-        <Nav />
-      </div>
-
-      <div>
-        <Home/>
+        <Main />
       </div>
     </div>
   );
