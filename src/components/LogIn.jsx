@@ -36,7 +36,7 @@ function Login() {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="w-96 p-6 shadow-lg bg-white space-y-8 rounded-md">
+      <div className=" p-6 shadow-lg bg-white space-y-8 rounded-md">
         <p class="text-3xl block text-center font-semibold">Sign In</p>
         <div className="flex flex-col items-center justify-center space-y-2 ">
           <form action="POST">
@@ -91,7 +91,7 @@ function Login() {
         {/* Google & Facebook */}
         <div className="p-6 ">
           <div className="flex flex-row items-center justify-between space-x-10">
-            <div className="flex  mt-5 items-center w-full bg-[#f31111] rounded-lg hover:bg-transparent px-5">
+            <div className="flex  mt-5 items-start w-full bg-[#f31111] rounded-lg hover:bg-transparent px-5">
               <button
                 type="submit"
                 class="text-white hover:text-slate-600 text-xl font-semibold  py-1 w-full"

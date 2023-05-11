@@ -35,7 +35,7 @@ function Sign_up() {
 
   return (
     <div className="flex flex-col items-center justify-center    ">
-      <div className="w-96 p-6 shadow-lg bg-white space-y-8 rounded-md">
+      <div className=" p-6 shadow-lg bg-white space-y-8 rounded-md">
         <p class="text-3xl block text-center font-semibold">Sign Up</p>
         <div className="flex flex-col items-center justify-center space-y-2 ">
           <form action="POST">
