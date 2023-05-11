@@ -34,8 +34,8 @@ function Sign_up() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center    ">
-      <div className=" p-6 shadow-lg bg-white space-y-8 rounded-md">
+    <div className="flex flex-col items-center justify-center">
+      <div className=" p-6 md:w-[34%] sm:w-[10%] shadow-lg bg-white space-y-8 rounded-md">
         <p class="text-3xl block text-center font-semibold">Sign Up</p>
         <div className="flex flex-col items-center justify-center space-y-2 ">
           <form action="POST">
@@ -81,10 +81,10 @@ function Sign_up() {
         </Link>
 
         <p class="flex justify-center items-center">Or</p>
-        {/* Google & Facebook */}
-        <div className="p-6 ">
-          <div className="flex flex-row items-center justify-between space-x-10">
-            <div className="flex  mt-5 items-center w-full bg-[#f31111] rounded-lg hover:bg-transparent px-5">
+         {/* Google & Facebook */}
+         <div className="p-6 ">
+          <div className="flex md:flex-row sm:flex-col justify-center items-center md:space-x-10">
+            <div className="flex  mt-5 items-start w-full bg-[#f31111] rounded-lg hover:bg-transparent px-5">
               <button
                 type="submit"
                 class="text-white hover:text-slate-600 text-xl font-semibold  py-1 w-full"
@@ -103,7 +103,7 @@ function Sign_up() {
             </div>
           </div>
           {/* Linledin & GitHub */}
-          <div className="flex flex-row items-center justify-between space-x-10">
+          <div className="flex md:flex-row sm:flex-col items-center justify-center md:space-x-10">
             <div className="flex  mt-5 items-center w-full bg-[#336492] rounded-lg hover:bg-transparent px-5">
               <button
                 type="submit"
