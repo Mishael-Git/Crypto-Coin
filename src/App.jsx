@@ -9,7 +9,7 @@ import Login from "./components/LogIn";
 
 function App() {
   return (
-    <div className="  bg-gradient-to-r from-purple-500 to-indigo-500 ">
+    <div className="  bg-gradient-to-r from-blue-500 to-blue-400 ">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/features" element={<Features />} />

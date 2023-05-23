@@ -5,7 +5,7 @@ function Blog() {
   return (
     <Wrapper>
       <div className="  md:flex md:flex-col sm:flex-col  items-center px-[10%]  py-[4%]">
-        <div className="py-3">
+        <div className="py-10">
           <h1 class="text-3xl font-bold">BLOG</h1>
         </div>
         <ol class="space-y-4 text-lg font-medium">
