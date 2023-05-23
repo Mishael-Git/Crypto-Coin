@@ -6,7 +6,7 @@ import { BiBitcoin } from "react-icons/bi";
 import { Link } from "react-router-dom";
 function Top() {
   return (
-    <Navbar expand="lg" fixed="top" bg="primary" >
+    <Navbar expand="lg" fixed="top"  >
       <Container className="flex items-center px-4">
         <Navbar.Brand
           as={Link}
