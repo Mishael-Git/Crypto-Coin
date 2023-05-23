@@ -1,6 +1,4 @@
 import React from "react";
-import Body from "./components/Body";
-import BitcoinAnimation from "./components/Test";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Features from "./components/Features";

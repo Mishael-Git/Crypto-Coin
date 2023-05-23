@@ -5,7 +5,7 @@ function Features() {
   return (
     <Wrapper>
       <div className="  md:flex md:flex-col sm:flex-col  items-center px-[10%]   py-[4%]">
-        <div>
+        <div className="py-3">
           <h1 class="text-3xl font-bold">FEATURES</h1>
         </div>
         <div>

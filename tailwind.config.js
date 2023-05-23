@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage:{
         Bit:"url('./public/Bitbackground1.jpg')",
+        Nav:"url('./public/Bitbackground4.jpg')",
       }
     },
   },
