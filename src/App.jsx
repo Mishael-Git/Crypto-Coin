@@ -6,6 +6,7 @@ import Sign_up from "./components/Sign_up";
 import Market from "./components/Market";
 import Blog from "./components/Blog";
 import Login from "./components/LogIn";
+import DashBoard from "./components/DashBoard";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/sign in" element={<Login/>} />
         <Route path="/sign up" element={<Sign_up />} />
+        <Route path="/dashboard" element={<DashBoard/>}/>
       </Routes>
     </div>
   );

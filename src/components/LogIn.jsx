@@ -76,7 +76,7 @@ function Login() {
           </div>
           <p class="text-slate-500">Forgot Password</p>
         </div>
-        <Link to="/Dashboard">
+        <Link to="/dashboard">
           <div className="mt-5 ">
             <button
               type="submit"

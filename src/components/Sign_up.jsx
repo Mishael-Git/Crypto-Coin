@@ -69,7 +69,7 @@ function Sign_up() {
           </form>
         </div>
 
-        <Link to="/Dashboard">
+        <Link to="/dashboard">
           <div className="mt-5 ">
             <button
               type="submit"
