@@ -3,14 +3,14 @@ import { Active, Side, Stats } from "./Info";
 function DashBoard() {
   return (
   //Sidebar
-    <div className="px-[1%] space-x-[19%] ">
-      <div className="py-9">
+    <div className="px-[1%] space-x-[20%]">
+      <div className="py-9 ">
         <Side />
       </div>
       <div className="flex h-screen flex-grow">
         {/* Body middle */}
         <div className="h-screen flex-grow">
-          <div >
+          <div className="">
             <Stats />
           </div>
         </div>
