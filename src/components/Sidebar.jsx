@@ -1,6 +1,6 @@
 import React from "react";
 import { BiBitcoin } from "react-icons/bi";
-import { RxDashboard } from "react-icons/rx";
+import { AiOutlineDashboard } from "react-icons/ai";
 import { MdIncompleteCircle, MdAnalytics } from "react-icons/md";
 import { FaStackExchange, FaExchangeAlt } from "react-icons/fa";
 import { AiFillSetting } from "react-icons/ai";
@@ -8,7 +8,7 @@ import { BsCreditCard2Back } from "react-icons/bs";
 import { Link } from "react-router-dom";
 function Sidebar() {
   return (
-    <div className="space-y-12 px-6  w-[20%] h-screen">
+    <div className="space-y-12 px-6 w-[20%] h-screen">
       <div className=" rounded-full bg-yellow-500 w-8">
         <BiBitcoin
           size={30}
@@ -19,7 +19,7 @@ function Sidebar() {
         <ul className="space-y-6">
           {/* Dashboard */}
           <div className="flex items-center hover:bg-[#a7fff3] space-x-1 w-[10%] px-2  rounded-xl">
-            <RxDashboard className="text" />
+            <AiOutlineDashboard className="text" />
             <li class="cursor-pointer font-medium ">Dashboard</li>
           </div>
           {/* Market */}

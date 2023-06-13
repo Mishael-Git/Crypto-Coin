@@ -3,25 +3,19 @@ import { Active, Side, Stats } from "./Info";
 function DashBoard() {
   return (
   //Sidebar
-    <div className="px-[1%] space-x-[20%]">
-      <div className="py-9 ">
+    <div className="flex xl:flex-row md:flex-row md:space-x-[3%]  sm:flex-col xl:space-x-[2%] px-5  py-4">
+      <div className="border">
         <Side />
       </div>
-      <div className="flex h-screen flex-grow">
         {/* Body middle */}
-        <div className="h-screen flex-grow">
-          <div className="">
+        <div className="border">
             <Stats />
           </div>
-        </div>
         {/* Body right */}
-        <div className="w-[40%] h-screen ">
-          <div className="h-full rounded-2xl py-5 px-6">
+          <div className="border">
             <Active />
           </div>
         </div>
-      </div>
-    </div>
   );
 }
 
