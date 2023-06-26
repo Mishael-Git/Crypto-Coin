@@ -2,12 +2,12 @@ import React from "react";
 import {FaArrowDown, FaArrowUp} from "react-icons/fa"
 function Statistics() {
   return (
-    <div className="space-y-7">
+    <div className="space-y-7 py-3">
       <div>
-        <input type="text" />
+        <input type="text" className="rounded-md w-[58%]" />
       </div>
 
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row items-center bg-gradient-to-r from-blue-400 to-cyan-400 px-2 py-2 rounded-lg">
         {/* LEFT */}
         <div className="px-3">
           <div className="flex flex-row items-center space-x-8">
@@ -41,6 +41,10 @@ function Statistics() {
             </div>
             <h1 class="text-lg">$64,579.55</h1>
         </div>
+        </div>
+        {/* BITSTATS */}
+        <div>
+
         </div>
       </div>
   );
