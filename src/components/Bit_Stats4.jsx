@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
-class Bit_Stats extends Component {
+class Bit_Stats4 extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,7 +29,8 @@ class Bit_Stats extends Component {
               options={this.state.options}
               series={this.state.series}
               type="area"
-              width="500"
+              width="800"
+              height="200"
             />
           </div>
         </div>
@@ -38,4 +39,4 @@ class Bit_Stats extends Component {
   }
 }
 
-export default Bit_Stats;
+export default Bit_Stats4;

@@ -5,3 +5,7 @@ export { default as Stats } from "./Statistics";
 export { default as Active } from "./Activities";
 export { default as Asset } from "./Crypto_assets";
 export { default as Last } from "./Last_activities";
+export { default as Stats1 } from "./Bit_Stats1";
+export { default as Stats2 } from "./Bit_Stats2";
+export { default as Stats3 } from "./Bit_Stats3";
+export { default as Stats4 } from "./Bit_Stats4";
