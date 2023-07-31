@@ -1,56 +1,34 @@
-import axios from "axios"
-import React from "react";
-import { useState } from "react";
+import React,{useState} from "react";
+import {  getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { CgProfile } from "react-icons/cg";
 import { FaLock } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 function Login() {
-  const history = useNavigate();
-  const { email, setEmail } = useState("");
-  const { password, setPassword } = useState("");
-
-  async function submit(e) {
+  const [email,  setEmail]= useState('');
+  const [password, setPassword] =useState('')
+ 
+  const signIn =(e)=> {
     e.preventDefault();
-
-    try {
-      await axios.post("http://localhost:5173/"),
-        {
-          email,
-          password,
-        }
-
-          .then((res) => {
-            if (res.data == "exist") {
-              history("/dashboard", { state: { id: email } });
-            } else if (res.data == "notexist") {
-              alert("User have not signed up");
-            }
-          })
-          .catch((e) => {
-            alert("wrong details");
-            console.log(e);
-          });
-    } catch (e) {
-      console.log(e);
+    signInWithEmailAndPassword(getAuth, email, password)
+    .then((userCredential)=>{
+      console.log(userCredential);
+    }).catch((error)=>{
+      console.log(error);
+    })
     }
-  }
-
   return (
     <div className="flex flex-col items-center justify-center">
       <div className=" p-6 md:w-[34%] sm:w-[10%] shadow-lg bg-white space-y-8 rounded-md">
         <p class="text-3xl block text-center font-semibold">Sign In</p>
         <div className="flex flex-col items-center justify-center space-y-2 ">
-          <form action="POST">
+          <form action="POST" onSubmit={signIn}>
             <div className="flex items-center border rounded-md px-2 text-2xl font-semibold">
               <CgProfile size={20} />
               <input
-                placeholder="Username or email"
+                placeholder=" Email"
                 type="email"
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-                name=""
-                id=""
+                value={email}
+                onChange={(e)=> setEmail(e.target.value)}
                 className=" w-full h-[50px] text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600"
               />
             </div>
@@ -59,11 +37,8 @@ function Login() {
               <input
                 placeholder="Password"
                 type="password"
-                onChange={(e) => {
-                  setPassword(e.target.value);
-                }}
-                name=""
-                id=""
+                value={password}
+                onChange={(e)=> setPassword(e.target.value)}
                 className=" w-full h-[50px] text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600 "
               />
             </div>
@@ -80,7 +55,6 @@ function Login() {
           <div className="mt-5 ">
             <button
               type="submit"
-              onClick={submit}
               class="border-2 border-[#37a137] rounded-lg bg-[#37a137] text-white hover:text-slate-600 hover:bg-transparent text-xl font-semibold py-1 w-full"
             >
               Sign in

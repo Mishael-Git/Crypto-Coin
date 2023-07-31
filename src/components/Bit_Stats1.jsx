@@ -8,9 +8,6 @@ class Bit_Stats1 extends Component {
         chart: {
           id: "basic-bar",
         },
-        xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
-        },
       },
       series: [
         {
@@ -31,7 +28,7 @@ class Bit_Stats1 extends Component {
               type="area"
               width="220"
               height="200"
-            />
+           />
           </div>
         </div>
       </div>

@@ -1,39 +1,8 @@
-import axios from "axios";
 import React from "react";
-import { useState } from "react";
 import { CgProfile } from "react-icons/cg";
 import { FaLock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 function Sign_up() {
-  const { email, setEmail } = useState("");
-  const { password, setPassword } = useState("");
-
-  async function submit(e) {
-    e.preventDefault();
-
-    try {
-      await axios.post("http://localhost:5173/"),
-        {
-          email,
-          password,
-        }
-
-          .then((res) => {
-            if (res.data == "exist") {
-              alert("User already exist");
-            } else if (res.data == "notexist") {
-              history("/dashboard", { state: { id: email } });
-            }
-          })
-          .catch((e) => {
-            alert("wrong details");
-            console.log(e);
-          });
-    } catch (e) {
-      console.log(e);
-    }
-  }
-
   return (
     <div className="flex flex-col items-center justify-center">
       <div className=" p-6 md:w-[34%] sm:w-[10%] shadow-lg bg-white space-y-8 rounded-md">
@@ -45,9 +14,6 @@ function Sign_up() {
               <input
                 placeholder="Username or email"
                 type="email"
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
                 name=""
                 id=""
                 className=" w-full h-[50px] text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600"
@@ -58,9 +24,6 @@ function Sign_up() {
               <input
                 placeholder="Password"
                 type="password"
-                onChange={(e) => {
-                  setPassword(e.target.value);
-                }}
                 name=""
                 id=""
                 className=" w-full h-[50px] text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600 "
@@ -73,7 +36,6 @@ function Sign_up() {
           <div className="mt-5 ">
             <button
               type="submit"
-              onClick={submit}
               class="border-2 border-[#37a137] rounded-lg bg-[#37a137] text-white hover:text-slate-600 hover:bg-transparent text-xl font-semibold py-1 w-full"
             >
               Sign up
