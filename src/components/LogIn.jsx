@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import {  getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import {  EmailAuthCredential, signInWithEmailAndPassword } from "firebase/auth";
 import { CgProfile } from "react-icons/cg";
 import { FaLock } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,7 +9,7 @@ function Login() {
  
   const signIn =(e)=> {
     e.preventDefault();
-    signInWithEmailAndPassword(getAuth, email, password)
+    signInWithEmailAndPassword(EmailAuthCredential, email, password)
     .then((userCredential)=>{
       console.log(userCredential);
     }).catch((error)=>{
@@ -19,13 +19,13 @@ function Login() {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className=" p-6 md:w-[34%] sm:w-[10%] shadow-lg bg-white space-y-8 rounded-md">
-        <p class="text-3xl block text-center font-semibold">Sign In</p>
+        <p className="text-3xl block text-center font-semibold">Sign In</p>
         <div className="flex flex-col items-center justify-center space-y-2 ">
           <form action="POST" onSubmit={signIn}>
             <div className="flex items-center border rounded-md px-2 text-2xl font-semibold">
               <CgProfile size={20} />
               <input
-                placeholder=" Email"
+                placeholder="Email"
                 type="email"
                 value={email}
                 onChange={(e)=> setEmail(e.target.value)}
@@ -49,27 +49,27 @@ function Login() {
             <input type="checkbox" />
             <label>Remember Me?</label>
           </div>
-          <p class="text-slate-500">Forgot Password</p>
+          <p className="text-slate-500">Forgot Password</p>
         </div>
         <Link to="/dashboard">
           <div className="mt-5 ">
             <button
               type="submit"
-              class="border-2 border-[#37a137] rounded-lg bg-[#37a137] text-white hover:text-slate-600 hover:bg-transparent text-xl font-semibold py-1 w-full"
+              className="border-2 border-[#37a137] rounded-lg bg-[#37a137] text-white hover:text-slate-600 hover:bg-transparent text-xl font-semibold py-1 w-full"
             >
               Sign in
             </button>
           </div>
         </Link>
 
-        <p class="flex justify-center items-center">Or</p>
+        <p className="flex justify-center items-center">Or</p>
         {/* Google & Facebook */}
         <div className="p-6 ">
           <div className="flex md:flex-row sm:flex-col justify-center items-center md:space-x-10">
             <div className="flex  mt-5 items-start w-full bg-[#f31111] rounded-lg hover:bg-transparent px-5">
               <button
                 type="submit"
-                class="text-white hover:text-slate-600 text-xl font-semibold  py-1 w-full"
+                className="text-white hover:text-slate-600 text-xl font-semibold  py-1 w-full"
               >
                 Google
               </button>
@@ -78,7 +78,7 @@ function Login() {
             <div className="flex  mt-5 items-center w-full bg-[#160674da] rounded-lg hover:bg-transparent px-5">
               <button
                 type="submit"
-                class="text-white hover:text-slate-600 text-xl font-semibold  py-1 w-full"
+                className="text-white hover:text-slate-600 text-xl font-semibold  py-1 w-full"
               >
                 Facebook
               </button>
@@ -89,7 +89,7 @@ function Login() {
             <div className="flex  mt-5 items-center w-full bg-[#336492] rounded-lg hover:bg-transparent px-5">
               <button
                 type="submit"
-                class="text-white hover:text-slate-600 text-xl font-semibold  py-1 w-full"
+                className="text-white hover:text-slate-600 text-xl font-semibold  py-1 w-full"
               >
                 Linkedin
               </button>
@@ -99,7 +99,7 @@ function Login() {
             <div className="flex  mt-5 items-center w-full bg-[#1b1a1a] rounded-lg hover:bg-transparent px-5">
               <button
                 type="submit"
-                class="text-white hover:text-slate-600 text-xl font-semibold  py-1 w-full"
+                className="text-white hover:text-slate-600 text-xl font-semibold  py-1 w-full"
               >
                 GitHub
               </button>
@@ -107,7 +107,7 @@ function Login() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <p class="text-xl font-semibold text-[#37a137] hover:underline cursor-pointer">
+          <p className="text-xl font-semibold text-[#37a137] hover:underline cursor-pointer">
             Why Create an Account?
           </p>
         </div>

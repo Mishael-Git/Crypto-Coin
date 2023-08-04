@@ -23,24 +23,24 @@ function Top() {
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/features">
               {" "}
-              <p class="text-white px-4 hover:text-slate-500">Features </p>
+              <p class="text-white px-4  text-lg hover:bg-blue-700 rounded-lg">Features </p>
             </Nav.Link>
             <Nav.Link as={Link} to="/market">
               {" "}
-              <p class="text-white px-4 hover:text-slate-500">Market </p>
+              <p class="text-white px-4  text-lg hover:bg-blue-700 rounded-lg">Market </p>
             </Nav.Link>
             <Nav.Link as={Link} to="/blog">
               {" "}
-              <p class="text-white px-4 hover:text-slate-500">Blog </p>
+              <p class="text-white px-4  text-lg hover:bg-blue-700 rounded-lg">Blog </p>
             </Nav.Link>
             <Nav.Link as={Link} to="/sign in">
               {" "}
-              <p class="text-white px-4 hover:text-slate-500">Log In </p>
+              <p class="text-white px-4  text-lg hover:bg-blue-700 rounded-lg">Log In </p>
             </Nav.Link>
           </Nav>
           <Nav className="ms-auto">
-            <div className="border rounded-md">
-            <Link to="sign up">  <button class="text-white px-4 ">Get started</button></Link>
+            <div className="border rounded-md ">
+            <Link to="sign up">  <button class="text-white text-lg px-4 hover:opacity-30 ">Get started</button></Link>
             </div>
           </Nav>
         </Navbar.Collapse>
