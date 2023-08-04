@@ -29,10 +29,7 @@ function Sign_up() {
                 className=" w-full h-[50px] text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600 "
               />
             </div>
-          </form>
-        </div>
-
-        <Link to="/dashboard">
+            <Link to="/dashboard">
           <div className="mt-5 ">
             <button
               type="submit"
@@ -42,7 +39,8 @@ function Sign_up() {
             </button>
           </div>
         </Link>
-
+          </form>
+        </div>
         <p class="flex justify-center items-center">Or</p>
          {/* Google & Facebook */}
          <div className="p-6 ">

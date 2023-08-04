@@ -1,34 +1,23 @@
-import React,{useState} from "react";
-import {  EmailAuthCredential, signInWithEmailAndPassword } from "firebase/auth";
+import React from "react";
 import { CgProfile } from "react-icons/cg";
 import { FaLock } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+// import { Link, useNavigate } from "react-router-dom";
 function Login() {
-  const [email,  setEmail]= useState('');
-  const [password, setPassword] =useState('')
- 
-  const signIn =(e)=> {
-    e.preventDefault();
-    signInWithEmailAndPassword(EmailAuthCredential, email, password)
-    .then((userCredential)=>{
-      console.log(userCredential);
-    }).catch((error)=>{
-      console.log(error);
-    })
-    }
+  const handleSumit=(e)=>{
+    e.preventDefault()
+    console.log(e.target.email.value)
+  }
   return (
     <div className="flex flex-col items-center justify-center">
       <div className=" p-6 md:w-[34%] sm:w-[10%] shadow-lg bg-white space-y-8 rounded-md">
         <p className="text-3xl block text-center font-semibold">Sign In</p>
         <div className="flex flex-col items-center justify-center space-y-2 ">
-          <form action="POST" onSubmit={signIn}>
+          <form onSubmit={(e)=>handleSumit(e)}>
             <div className="flex items-center border rounded-md px-2 text-2xl font-semibold">
               <CgProfile size={20} />
               <input
                 placeholder="Email"
                 type="email"
-                value={email}
-                onChange={(e)=> setEmail(e.target.value)}
                 className=" w-full h-[50px] text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600"
               />
             </div>
@@ -37,31 +26,21 @@ function Login() {
               <input
                 placeholder="Password"
                 type="password"
-                value={password}
-                onChange={(e)=> setPassword(e.target.value)}
                 className=" w-full h-[50px] text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600 "
               />
             </div>
-          </form>
-        </div>
-        <div className="flex mt-3 justify-between items-center">
-          <div>
-            <input type="checkbox" />
-            <label>Remember Me?</label>
-          </div>
-          <p className="text-slate-500">Forgot Password</p>
-        </div>
-        <Link to="/dashboard">
+        {/* <Link to="/dashboard"> */}
           <div className="mt-5 ">
-            <button
+            <button 
               type="submit"
               className="border-2 border-[#37a137] rounded-lg bg-[#37a137] text-white hover:text-slate-600 hover:bg-transparent text-xl font-semibold py-1 w-full"
             >
               Sign in
             </button>
           </div>
-        </Link>
-
+        {/* </Link> */}
+          </form>
+        </div>
         <p className="flex justify-center items-center">Or</p>
         {/* Google & Facebook */}
         <div className="p-6 ">
